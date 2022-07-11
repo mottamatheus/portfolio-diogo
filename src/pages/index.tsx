@@ -1,5 +1,6 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { Header } from "../components/Header";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -17,6 +18,7 @@ export default function Home() {
       >
         Toggle to {theme === "light" ? "Dark" : "Light"}
       </button>
+      <Header label="oi" />
     </div>
   );
 }
