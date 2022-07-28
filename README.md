@@ -47,7 +47,6 @@ The following tools were used in this project:
 
 - [Next](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
-- [Storybook](https://storybook.js.org/)
 
 ## :white_check_mark: Requirements
 
