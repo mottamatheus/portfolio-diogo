@@ -27,7 +27,7 @@ const Card = ({ imgSrc, layoutId, alt }: CardProps) => {
       variants={variants}
       initial="hidden"
       animate="visible"
-      className="relative h-auto w-full mt-24   rounded-xl hover:bg-gray-300 transition"
+      className="relative h-auto w-full mt-24 rounded-xl hover:bg-gray-300 transition"
     >
       <motion.img
         src={imgSrc}

@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-center items-center py-4 space-x-10">
+      <header className="flex justify-center items-center py-4 space-x-10 ">
         <Link href="/">
           <Image
             src="/vercel.svg"

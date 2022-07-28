@@ -6,19 +6,19 @@ import Heading from "../components/Heading";
 
 export default function Home() {
   return (
-    <div className="px-20">
+    <div className="px-4 md:px-20">
       <Header />
-      <div className="flex flex-row justify-center items-center  ">
+      <div className="flex flex-col justify-center items-center md:flex-row  ">
         <Heading text="Agilidade e comprometimento no transporte de pessoas." />
         <Card imgSrc={"/img/van-car.png"} layoutId={"van-example"} alt="" />
       </div>
 
-      <div className="flex flex-row justify-center items-center mt-12 ">
+      <div className="flex flex-col justify-center items-center  md:flex-row ">
         <Card imgSrc={"/img/nextjs.svg"} layoutId={"nextjs-logo"} alt="" />
         <Heading text="Somos referência em viagens, transporte escolar e freteamento." />
       </div>
 
-      <div className="flex flex-row  justify-center items-center ">
+      <div className="flex flex-col  justify-center items-center md:flex-row">
         <Heading text="Conheça nossa frota e faça um orçamento." />
         <Card
           imgSrc={"/img/van-car.png"}
