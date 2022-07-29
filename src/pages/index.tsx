@@ -1,33 +1,63 @@
+import { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import { motion, Variants } from "framer-motion";
 import Card from "../components/Card";
-import ChatWpp from "../components/ChatWpp";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Heading from "../components/Heading";
 
-export default function Home() {
+const variants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delayChildren: 1,
+      staggerChildren: 0.7,
+    },
+  },
+};
+
+const Home: NextPage = () => {
   return (
-    <div className="px-4 md:px-20">
-      <Header />
-      <div className="flex flex-col justify-center items-center md:flex-row  ">
-        <Heading text="Agilidade e comprometimento nos serviços prestados." />
-        <Card imgSrc={"/img/van-car.png"} layoutId={"van-example"} alt="" />
-      </div>
+    <>
+      <Head>
+        <title>Home | ClaudiosTur </title>
+        <link role="link" rel="icon" href="/images/favicon.png" />
+        <meta name="description" content="Sobre a empresa" />
+        <meta name="keywords" content="Aluguel de Van, Micro-Onibus, Viagem" />
+      </Head>
+      <div className="px-4 md:px-20">
+        <div className="flex flex-col justify-center items-center md:flex-row  ">
+          <Heading text="Empresa especializada em viagens, transporte escolar e freteamento." />
+          <Card
+            href="/van"
+            imgSrc={"/img/viagem.png"}
+            layoutId={"van-example"}
+            alt="imagem ilustrando viagens"
+          />
+        </div>
 
-      <div className="flex flex-col justify-center items-center  md:flex-row ">
-        <Card imgSrc={"/img/viagem.png"} layoutId={"nextjs-logo"} alt="" />
-        <Heading text="Somos referência em viagens, transporte escolar e freteamento." />
-      </div>
+        <div className="flex flex-col  justify-center items-center md:flex-row">
+          <Card
+            href="/micro"
+            imgSrc={"/img/micro.png"}
+            layoutId={"micro-example"}
+            alt="imagem ilustrativa de um micro-onibus"
+          />
+          <Heading text="Agilidade e comprometimento nos serviços prestados." />
+        </div>
+        <div className="flex flex-col  justify-center items-center md:flex-row">
+          <Heading text="Conheça nossa frota e faça um orçamento." />
 
-      <div className="flex flex-col  justify-center items-center md:flex-row">
-        <Heading text="Conheça nossa frota e faça um orçamento." />
-        <Card
-          imgSrc={"/img/van-car.png"}
-          layoutId={"tailwind-logo"}
-          alt="imagem ilustrativa de uma van"
-        />
+          <Card
+            href="/van"
+            imgSrc={"/img/van-car.png"}
+            layoutId={"van-example"}
+            alt="imagem ilustrativa de uma van"
+          />
+        </div>
       </div>
-      <ChatWpp />
-      <Footer />
-    </div>
+    </>
   );
-}
+};
+export default Home;

@@ -23,19 +23,20 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-center items-center py-4 space-x-10 ">
+      <header className="flex justify-center items-center py-0 space-x-10 ">
         <Link href="/">
           <Image
-            src="/vercel.svg"
+            src="/img/logo.png"
             className="cursor-pointer"
             alt="logo"
             width={150}
-            height={33}
+            height={120}
           />
         </Link>
         <div className="flex flex-row items-center">
           <h1>Fale conosco</h1>
           <WhatsappLogo
+            alt="Whatsapp"
             className="cursor-pointer"
             onClick={handlerRedirect}
             size={32}
