@@ -5,7 +5,7 @@
 
 </div>
 
-<h1 align="center">Next Full Page</h1>
+<h1 align="center">ClaudioTur</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/DiogoRocha10/next-full-page?color=56BEB8">
@@ -39,7 +39,7 @@
 
 ## :dart: About
 
-Project used to create next page example
+Landing page project created with NextJS for a van and minibus rental company, contains dark theme and whatsapp redirect
 
 ## :rocket: Technologies
 
@@ -47,7 +47,6 @@ The following tools were used in this project:
 
 - [Next](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
-- [Storybook](https://storybook.js.org/)
 
 ## :white_check_mark: Requirements
 
@@ -80,4 +79,3 @@ Made with :heart: by <a href="https://github.com/DiogoRocha10" target="_blank">D
 &#xa0;
 
 <a href="#top">Back to top</a>
-
