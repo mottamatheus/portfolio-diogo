@@ -79,4 +79,3 @@ Made with :heart: by <a href="https://github.com/DiogoRocha10" target="_blank">D
 &#xa0;
 
 <a href="#top">Back to top</a>
-
