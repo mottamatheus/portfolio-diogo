@@ -45,7 +45,11 @@ const Home: NextPage = () => {
           />
         </div>
         <div className="flex flex-col  justify-center items-center md:flex-row">
-          <Button href="/frota" title="Ver a Frota" />
+          <Button
+            href="/frota"
+            title="Ver a Frota"
+            aria-label="navegar para frota"
+          />
         </div>
       </div>
     </>

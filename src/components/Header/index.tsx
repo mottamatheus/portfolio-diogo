@@ -34,7 +34,7 @@ const Header = () => {
           />
         </Link> */}
         <div className="flex flex-row items-center space-x-8 ">
-          <a className=" flex flex-row items-center  cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0">
+          <a className="flex flex-row items-center cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0">
             Fale conosco
             <WhatsappLogo
               alt="Whatsapp"
