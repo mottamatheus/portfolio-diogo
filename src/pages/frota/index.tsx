@@ -10,7 +10,7 @@ const FrotaPage: NextPage = () => {
     <>
       <Head>
         <title>Frota | ClaudiosTur </title>
-        <link role="link" rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Veículos da empresa" />
         <meta
           name="keywords"

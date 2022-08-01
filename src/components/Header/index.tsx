@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Lightbulb, WhatsappLogo } from "phosphor-react";
 import { useCallback } from "react";
+import { Heading } from "../Heading";
 
 const Header = () => {
   const phoneWpp = `${process.env.NEXT_PUBLIC_PHONE_WPP}`;
@@ -24,25 +25,17 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-center items-center py-4 space-x-10 ">
-        {/* <Link href="/">
-          <Image
-            src=""
-            className="cursor-pointer"
-            alt="logo"
-            width={150}
-            height={120}
-          />
-        </Link> */}
+        <h1 className="text-3xl animate-bounce font-bold"> CláudiosTur</h1>
         <div className="flex flex-row items-center space-x-8 ">
           <a
             onClick={handlerRedirect}
-            className="flex flex-row items-center cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0"
+            className="md:flex flex-row items-center hidden md:visible cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0"
           >
             Fale conosco
             <WhatsappLogo alt="Whatsapp" size={32} color="green" />
           </a>
           <Link href="/frota">
-            <a className=" bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition">
+            <a className="md:flex hidden md:visible bg-gray-900   text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition">
               Frota
             </a>
           </Link>

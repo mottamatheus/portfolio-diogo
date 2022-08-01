@@ -1,13 +1,14 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
 
 type CardProps = {
-  imgSrc: string;
+  imgSrc: StaticImageData;
   layoutId: string;
   alt: string;
   href: string;
-  widht: number;
+  width: number;
   height: number;
 };
 
@@ -28,7 +29,7 @@ const Card = ({
   layoutId,
   alt,
   href,
-  widht,
+  width,
   height,
   ...props
 }: CardProps) => {
@@ -42,8 +43,9 @@ const Card = ({
         animate="visible"
         className="relative h-full w-full mt-24 rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         variants={variants}
+        {...props}
       >
-        <Image width={widht} height={height} src={imgSrc} alt={alt} />
+        <Image src={imgSrc} alt={alt} width={width} height={height} />
       </motion.div>
     </Link>
   );
