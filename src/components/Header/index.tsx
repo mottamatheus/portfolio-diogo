@@ -25,7 +25,11 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-center items-center py-4 space-x-10 ">
-        <h1 className="text-3xl animate-bounce font-bold"> CláudiosTur</h1>
+        <Link href="/">
+          <h1 className="text-3xl animate-bounce font-bold cursor-pointer">
+            CláudiosTur
+          </h1>
+        </Link>
         <div className="flex flex-row items-center space-x-8 ">
           <a
             onClick={handlerRedirect}
