@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WhatsappLogo, InstagramLogo, FacebookLogo } from "phosphor-react";
+import { InstagramLogo, FacebookLogo } from "phosphor-react";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       <p className="text-gray-900 text-xl dark:text-gray-100">
         Passo Fundo - RS
       </p>
-      <div className="flex flex-row">
+      {/* <div className="flex flex-row">
         <Link
           href="https://www.facebook.com/"
           target="_blank"
@@ -37,7 +37,7 @@ const Footer = () => {
             className="cursor-pointer"
           />
         </Link>
-      </div>
+      </div> */}
       <footer className="flex justify-center items-center p-6">
         <span className="text-md text-gray-900 bold  dark:text-gray-100">
           <Link href="https://www.linkedin.com/in/diogorochaa/">
@@ -49,4 +49,4 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;
+export { Footer };

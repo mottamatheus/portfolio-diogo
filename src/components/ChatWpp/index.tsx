@@ -26,4 +26,4 @@ const ChatWpp = () => {
   );
 };
 
-export default ChatWpp;
+export { ChatWpp };

@@ -23,28 +23,34 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-center items-center py-0 space-x-10 ">
-        <Link href="/">
+      <header className="flex justify-center items-center py-4 space-x-10 ">
+        {/* <Link href="/">
           <Image
-            src="/img/logo.png"
+            src=""
             className="cursor-pointer"
             alt="logo"
             width={150}
             height={120}
           />
-        </Link>
-        <div className="flex flex-row items-center">
-          <h1>Fale conosco</h1>
-          <WhatsappLogo
-            alt="Whatsapp"
-            className="cursor-pointer"
-            onClick={handlerRedirect}
-            size={32}
-            color="green"
-          />
+        </Link> */}
+        <div className="flex flex-row items-center space-x-8 ">
+          <a className=" flex flex-row items-center  cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0">
+            Fale conosco
+            <WhatsappLogo
+              alt="Whatsapp"
+              onClick={handlerRedirect}
+              size={32}
+              color="green"
+            />
+          </a>
+          <Link href="/frota">
+            <a className=" bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition">
+              Frota
+            </a>
+          </Link>
         </div>
         <Lightbulb
-          className="cursor-pointer"
+          className="cursor-pointer "
           size={32}
           onClick={handlerTheme}
         />
@@ -54,4 +60,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export { Header };
