@@ -14,7 +14,10 @@ const ChatWpp = () => {
   }, [phoneWpp, messageWpp]);
 
   return (
-    <div className="fixed mr-6 w-8 h-8 bottom-24 right-1 rounded items-center z-50">
+    <div
+      className="fixed mr-6 w-8 h-8 bottom-24 right-1 rounded items-center z-50"
+      role="link"
+    >
       <WhatsappLogo
         onClick={handlerRedirect}
         size={48}

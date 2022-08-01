@@ -13,7 +13,7 @@ const Button = ({ href, title }: ButtonProps) => (
     transition={{ delay: 1, duration: 1 }}
     className="mt-8 space-x-4"
   >
-    <Link href={href}>
+    <Link href={href} role="link">
       <a className="bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition">
         {title}
       </a>
