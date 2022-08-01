@@ -22,6 +22,8 @@ const Home: NextPage = () => {
             imgSrc={"/img/viagem.png"}
             layoutId={"van-example"}
             alt="imagem ilustrando viagens"
+            widht={600}
+            height={600}
           />
         </div>
 
@@ -31,6 +33,8 @@ const Home: NextPage = () => {
             imgSrc={"/img/micro.png"}
             layoutId={"micro-example"}
             alt="imagem ilustrativa de um micro-onibus"
+            widht={700}
+            height={350}
           />
           <Heading text="Agilidade e comprometimento nos serviços prestados." />
         </div>
@@ -42,6 +46,8 @@ const Home: NextPage = () => {
             imgSrc={"/img/van-car.png"}
             layoutId={"van-example"}
             alt="imagem ilustrativa de uma van"
+            widht={600}
+            height={400}
           />
         </div>
         <div className="flex flex-col  justify-center items-center md:flex-row">
