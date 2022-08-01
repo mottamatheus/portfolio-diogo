@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col justify-center items-center md:flex-row  ">
           <Heading text="Empresa especializada em viagens, transporte escolar e freteamento." />
           <Card
-            href="/van"
+            href="/frota"
             imgSrc={Viagem}
             layoutId={"viagem-example"}
             alt="imagem ilustrando viagens"
