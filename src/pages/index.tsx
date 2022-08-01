@@ -5,12 +5,16 @@ import { Card } from "../components/Card";
 import { Heading } from "../components/Heading";
 import { Button } from "../components/Button";
 
+import Viagem from "../../public/img/viagem.png";
+import Micro from "../../public/img/micro.png";
+import Van from "../../public/img/van-car.png";
+
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Home | ClaudiosTur </title>
-        <link role="link" rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Sobre a empresa" />
         <meta name="keywords" content="Aluguel de Van, Micro-Onibus, Viagem" />
       </Head>
@@ -19,22 +23,22 @@ const Home: NextPage = () => {
           <Heading text="Empresa especializada em viagens, transporte escolar e freteamento." />
           <Card
             href="/van"
-            imgSrc={"/img/viagem.png"}
-            layoutId={"van-example"}
+            imgSrc={Viagem}
+            layoutId={"viagem-example"}
             alt="imagem ilustrando viagens"
-            widht={600}
-            height={600}
+            height={420}
+            width={594}
           />
         </div>
 
         <div className="flex flex-col  justify-center items-center md:flex-row">
           <Card
             href="/frota"
-            imgSrc={"/img/micro.png"}
+            imgSrc={Micro}
             layoutId={"micro-example"}
             alt="imagem ilustrativa de um micro-onibus"
-            widht={700}
-            height={350}
+            height={339}
+            width={735}
           />
           <Heading text="Agilidade e comprometimento nos serviços prestados." />
         </div>
@@ -43,19 +47,15 @@ const Home: NextPage = () => {
 
           <Card
             href="/frota"
-            imgSrc={"/img/van-car.png"}
+            imgSrc={Van}
             layoutId={"van-example"}
             alt="imagem ilustrativa de uma van"
-            widht={600}
-            height={400}
+            height={500}
+            width={800}
           />
         </div>
         <div className="flex flex-col  justify-center items-center md:flex-row">
-          <Button
-            href="/frota"
-            title="Ver a Frota"
-            aria-label="navegar para frota"
-          />
+          <Button href="/frota" title="Ver a Frota" />
         </div>
       </div>
     </>

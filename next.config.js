@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
@@ -6,4 +10,5 @@ module.exports = {
     locales: ["pt-BR"],
     defaultLocale: "pt-BR",
   },
+  withBundleAnalyzer,
 };
