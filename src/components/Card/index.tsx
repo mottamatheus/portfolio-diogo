@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 type CardProps = {
@@ -6,6 +7,8 @@ type CardProps = {
   layoutId: string;
   alt: string;
   href: string;
+  widht: number;
+  height: number;
 };
 
 const variants: Variants = {
@@ -20,7 +23,15 @@ const variants: Variants = {
   },
 };
 
-const Card = ({ imgSrc, layoutId, alt, href, ...props }: CardProps) => {
+const Card = ({
+  imgSrc,
+  layoutId,
+  alt,
+  href,
+  widht,
+  height,
+  ...props
+}: CardProps) => {
   return (
     <Link href={href}>
       <motion.div
@@ -32,13 +43,7 @@ const Card = ({ imgSrc, layoutId, alt, href, ...props }: CardProps) => {
         className="relative h-full w-full mt-24 rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         variants={variants}
       >
-        <motion.img
-          src={imgSrc}
-          className="w-full h-full cursor-pointer"
-          layoutId={layoutId}
-          alt={alt}
-          {...props}
-        />
+        <Image width={widht} height={height} src={imgSrc} alt={alt} />
       </motion.div>
     </Link>
   );
