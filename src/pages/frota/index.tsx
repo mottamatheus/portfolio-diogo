@@ -19,7 +19,7 @@ const FrotaPage: NextPage = () => {
       </Head>
       <div className="flex flex-col items-center ">
         <DataSlider data={dataSlider} />
-        <Button href="/" title="Voltar para o ínicio" aria-label="Voltar" />
+        <Button href="/" title="Voltar para o ínicio" />
       </div>
     </>
   );
