@@ -1,12 +1,12 @@
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 
-interface CardProps {
+type CardProps = {
   imgSrc: string;
   layoutId: string;
   alt: string;
   href: string;
-}
+};
 
 const variants: Variants = {
   hidden: { opacity: 0 },
@@ -29,7 +29,7 @@ const Card = ({ imgSrc, layoutId, alt, href, ...props }: CardProps) => {
         }}
         initial="hidden"
         animate="visible"
-        className="relative h-auto w-full mt-24 rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+        className="relative h-full w-full mt-24 rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         variants={variants}
       >
         <motion.img
@@ -44,4 +44,5 @@ const Card = ({ imgSrc, layoutId, alt, href, ...props }: CardProps) => {
   );
 };
 
-export default Card;
+export { Card };
+export type { CardProps };
