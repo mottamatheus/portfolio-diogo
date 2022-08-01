@@ -12,19 +12,20 @@ type SliderFrotaProps = {
   children: ReactNode;
 };
 
-const SliderFrota = memo(({ children }: SliderFrotaProps) => (
-  <Swiper
-    pagination
-    autoplay={{
-      delay: 5000,
-      disableOnInteraction: false,
-    }}
-    modules={[Pagination]}
-    className="w-full h-[500px] md:w-[900px] md:h-[650px] text-center justify-center items-center"
-  >
-    {children}
-  </Swiper>
-));
+export default function SliderFrota({ children }: SliderFrotaProps) {
+  return (
+    <Swiper
+      pagination
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination]}
+      className="w-full h-[500px] md:w-[900px] md:h-[650px] text-center justify-center items-center"
+    >
+      {children}
+    </Swiper>
+  );
+}
 
-export { SliderFrota };
 export type { SliderFrotaProps };
