@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
-import { Slider } from ".";
+import { SliderFrota } from "./slider-frota";
 
 type Props = {
   data: {
@@ -12,7 +12,7 @@ type Props = {
 
 function DataSlider({ data }: Props) {
   return (
-    <Slider>
+    <SliderFrota>
       {data.map(({ id, image }) => (
         <SwiperSlide key={id}>
           <div className="flex flex-col justify-center items-center mt-12">
@@ -20,7 +20,7 @@ function DataSlider({ data }: Props) {
           </div>
         </SwiperSlide>
       ))}
-    </Slider>
+    </SliderFrota>
   );
 }
 
