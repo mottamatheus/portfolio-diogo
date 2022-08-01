@@ -1,12 +1,12 @@
 import { memo, ReactNode } from "react";
-import SwiperCore, { A11y, Autoplay, Pagination } from "swiper";
+import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-SwiperCore.use([Pagination, Autoplay, A11y]);
+SwiperCore.use([Pagination, Autoplay]);
 
 type SliderProps = {
   children: ReactNode;
@@ -14,7 +14,6 @@ type SliderProps = {
 
 const Slider = memo(({ children }: SliderProps) => (
   <Swiper
-    a11y={{ prevSlideMessage: "Anterior", nextSlideMessage: "Próximo" }}
     pagination
     autoplay={{
       delay: 5000,
