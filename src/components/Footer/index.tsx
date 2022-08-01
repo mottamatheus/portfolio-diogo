@@ -7,7 +7,7 @@ const Footer = () => {
       <h1 className="text-gray-900 text-2xl font-bold dark:text-gray-100">
         Contatos
       </h1>
-      <p className="text-gray-900 text-xl dark:text-gray-100">54 3581-1869</p>
+      <p className="text-gray-900 text-xl dark:text-gray-100">54 991061300</p>
       <p className="text-gray-900 text-xl dark:text-gray-100">
         Passo Fundo - RS
       </p>

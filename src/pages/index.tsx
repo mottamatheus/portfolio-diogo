@@ -43,16 +43,15 @@ const Home: NextPage = () => {
           <Heading text="Agilidade e comprometimento nos serviços prestados." />
         </div>
         <div className="flex flex-col  justify-center items-center md:flex-row">
-          <Heading text="Conheça nossa frota e faça um orçamento." />
-
           <Card
             href="/frota"
             imgSrc={Van}
             layoutId={"van-example"}
             alt="imagem ilustrativa de uma van"
-            height={500}
-            width={800}
+            height={433}
+            width={577}
           />
+          <Heading text="Conheça nossa frota e faça um orçamento." />
         </div>
         <div className="flex flex-col  justify-center items-center md:flex-row">
           <Button href="/frota" title="Ver a Frota" />
