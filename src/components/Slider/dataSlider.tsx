@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
-import { SliderFrota } from "./slider-frota";
+import SliderFrota from "./slider-frota";
 
 type Props = {
   data: {
