@@ -1,58 +1,19 @@
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import Link from "next/link";
-import { Lightbulb, WhatsappLogo } from "phosphor-react";
-import { useCallback } from "react";
-import { Heading } from "../Heading";
+import { lazy } from 'react';
 
-const Header = () => {
-  const phoneWpp = `${process.env.NEXT_PUBLIC_PHONE_WPP}`;
-  const messageWpp =
-    "Olá, tudo bem? Estou entrando em contato para tirar dúvidas.";
+const Navigation = lazy(() => import('./header-navigation'));
 
-  const handlerRedirect = useCallback(() => {
-    window.open(
-      `https://api.whatsapp.com/send?phone=${phoneWpp}&text=${messageWpp}`,
-      "_blank"
-    );
-  }, [phoneWpp, messageWpp]);
-
-  const { theme, setTheme } = useTheme();
-  const handlerTheme = useCallback(() => {
-    setTheme(theme === "light" ? "dark" : "light");
-  }, [theme, setTheme]);
-
+export default function Header() {
   return (
-    <>
-      <header className="flex justify-center items-center py-4 space-x-10 ">
-        <Link href="/">
-          <h1 className="text-3xl animate-bounce font-bold cursor-pointer">
-            CláudiosTur
-          </h1>
-        </Link>
-        <div className="flex flex-row items-center space-x-8 ">
-          <a
-            onClick={handlerRedirect}
-            className="md:flex flex-row items-center hidden md:visible cursor-pointer bg-gray-900  text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition0"
-          >
-            Fale conosco
-            <WhatsappLogo alt="Whatsapp" size={32} color="green" />
-          </a>
-          <Link href="/frota">
-            <a className="md:flex hidden md:visible bg-gray-900   text-gray-50 px-6 py-3 text-lg font-semibold rounded-xl hover:bg-gray-700 transition">
-              Frota
-            </a>
-          </Link>
-        </div>
-        <Lightbulb
-          className="cursor-pointer "
-          size={32}
-          onClick={handlerTheme}
-        />
-      </header>
-      <hr className="my-2 border-gray-700 s dark:border-gray-200 " />
-    </>
+    <header className="bg-gray-200 dark:bg-black">
+      <div className="flex items-center justify-between px-10 mx-auto max-w-[1920px] py-9">
+        <a
+          href="/"
+          className="text-black dark:text-white hover:text-blue-300 dark:hover:text-blue-300"
+        >
+          <h1 className="text-2xl font-semibold">DiogoDev</h1>
+        </a>
+        <Navigation />
+      </div>
+    </header>
   );
-};
-
-export { Header };
+}
