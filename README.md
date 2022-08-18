@@ -5,16 +5,16 @@
 
 </div>
 
-<h1 align="center">ClaudioTur</h1>
+<h1 align="center">Porfolio</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/DiogoRocha10/next-full-page?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/DiogoRocha10/portfolio-diogo?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/DiogoRocha10/next-full-page?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/DiogoRocha10/portfolio-diogo?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DiogoRocha10/next-full-page?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DiogoRocha10/portfolio-diogo?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/DiogoRocha10/next-full-page?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/DiogoRocha10/portfolio-diogo?color=56BEB8">
 
 </p>
 
@@ -47,6 +47,7 @@ The following tools were used in this project:
 
 - [Next](https://nextjs.org/)
 - [Tailwind](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/docs/introduction/)
 
 ## :white_check_mark: Requirements
 
@@ -56,10 +57,10 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/DiogoRocha10/next-full-page
+$ git clone https://github.com/DiogoRocha10/portfolio-diogo
 
 # Access
-$ cd next-full-page
+$ cd portfolio-diogo
 
 # Install dependencies
 $ npm install
