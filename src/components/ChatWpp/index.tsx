@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { WhatsappLogo } from 'phosphor-react';
 
-const ChatWpp = () => {
+function ChatWpp() {
   const phoneWpp = `${process.env.NEXT_PUBLIC_PHONE_WPP}`;
   const messageWpp = 'Olá, vim do portfólio!';
 
@@ -13,7 +13,7 @@ const ChatWpp = () => {
   }, [phoneWpp, messageWpp]);
 
   return (
-    <div className="fixed mr-6 w-8 h-8 bottom-24 right-1 rounded items-center z-50">
+    <div className="fixed z-50 items-center w-8 h-8 mr-6 rounded bottom-24 right-1">
       <WhatsappLogo
         onClick={handlerRedirect}
         size={48}
@@ -23,6 +23,6 @@ const ChatWpp = () => {
       />
     </div>
   );
-};
+}
 
 export { ChatWpp };
