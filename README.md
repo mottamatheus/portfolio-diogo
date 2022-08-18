@@ -39,7 +39,7 @@
 
 ## :dart: About
 
-Landing page project created with NextJS for a van and minibus rental company, contains dark theme and whatsapp redirect
+Personal portfolio to publicize my work and skills
 
 ## :rocket: Technologies
 
