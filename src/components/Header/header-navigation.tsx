@@ -8,7 +8,7 @@ export default function Navigation() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   }, [theme, setTheme]);
   return (
-    <nav className="flex  font-medium gap-7 font-display ">
+    <nav className="flex items-center justify-center font-medium gap-7 font-display">
       <a
         className="text-black dark:text-white  hover:text-blue-300 dark:hover:text-blue-300"
         href="#sobre"
