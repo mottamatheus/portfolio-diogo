@@ -1,10 +1,11 @@
-import Link from 'next/link';
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
 
 function FooterSocial() {
   return (
     <div className="flex flex-row mt-1">
-      <Link
+      <a
+        rel="noreferrer"
+        type="link"
         href="https://www.facebook.com/diogo.rocha.1042/"
         target="_blank"
         aria-label="facebook"
@@ -14,8 +15,10 @@ function FooterSocial() {
           size={50}
           alt="Facebook"
         />
-      </Link>
-      <Link
+      </a>
+      <a
+        rel="noreferrer"
+        type="link"
         href="https://www.instagram.com/diogo_rochaaa"
         target="_blank"
         aria-label="instagram"
@@ -25,8 +28,10 @@ function FooterSocial() {
           alt="Instagram"
           className="cursor-pointer hover:text-red-500"
         />
-      </Link>
-      <Link
+      </a>
+      <a
+        rel="noreferrer"
+        type="link"
         href="https://www.linkedin.com/in/diogorochaa/"
         target="_blank"
         aria-label="instagram"
@@ -36,7 +41,7 @@ function FooterSocial() {
           alt="Linkedin"
           className="cursor-pointer hover:text-blue-800"
         />
-      </Link>
+      </a>
     </div>
   );
 }

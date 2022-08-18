@@ -1,5 +1,4 @@
 import { useCallback } from 'react';
-import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { GithubLogo, Lightbulb } from 'phosphor-react';
 
@@ -16,16 +15,20 @@ export default function Navigation() {
       >
         Sobre
       </a>
-      <Link
+      <a
         className="text-black dark:text-white hover:text-blue-300 dark:hover:text-blue-300"
         href="https://github.com/DiogoRocha10"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="github"
+        type="link"
       >
         <GithubLogo
           size={32}
           className="cursor-pointer hover:text-blue-300"
           alt="GitHub"
         />
-      </Link>
+      </a>
       <Lightbulb
         className="cursor-pointer hover:text-blue-300"
         size={32}
