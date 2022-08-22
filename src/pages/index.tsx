@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import Image from 'next/image';
 
+import Perfil from '../../public/perfil.jpeg';
 import Logos from '../components/Logos';
 
 export default function Home() {
@@ -12,7 +14,8 @@ export default function Home() {
       <Head>
         <title>Home | DiogoDev </title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Sobre mim" />
+        <link rel="canonical" href="https://portfolio-diogo.vercel.app/" />
+        <meta name="description" content="Sobre mim" key="title" />
         <meta
           name="keywords"
           content="Desenvolvimento, Front-End, ReactJs, NextJs"
@@ -28,23 +31,27 @@ export default function Home() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <span className="text-3xl md:text-6xl">Olá, me chamo</span>
-          <h1 className="text-5xl text-yellow-400 md:text-6xl dark:text-yellow-200">
-            Diogo Rocha
+          <h1 className="text-4xl text-orange-500 dark:text-white md:text-6xl">
+            Olá, <br /> me chamo
+            <br /> Diogo Rocha
+            <br /> Desenvolvedor Web
           </h1>
-          <span className="text-2xl text-gray-400 md:text-4xl">
-            Desenvolvedor Web
-          </span>
         </motion.div>
         <div className="flex items-start justify-start h-auto">
-          <motion.img
-            src=" https://media-exp1.licdn.com/dms/image/C5603AQEhkWCsOb-r-A/profile-displayphoto-shrink_800_800/0/1632840014019?e=1666224000&v=beta&t=hxWrm6AqLLjllZw-7jh-5hgOZS0nt0vcjNqza0r0Pk0"
-            alt="Diogo Rocha"
-            className="border-4 border-yellow-200 rounded-full cursor-pointer w-72 h-72 md:h-96 md:w-96"
+          <motion.div
             animate={{ rotate: rotate ? 360 : 0 }}
             transition={{ duration: 1 }}
             onClick={() => setRotate(!rotate)}
-          />
+            className="flex items-center justify-center border-4 border-orange-500 rounded-full dark:border-white"
+          >
+            <Image
+              className=" rounded-full cursor-pointer "
+              src={Perfil}
+              alt="Imagem de identificação"
+              width={384}
+              height={384}
+            />
+          </motion.div>
         </div>
       </div>
 
@@ -53,9 +60,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center p-12  gap-8"
       >
         <div className="flex flex-col items-center justify-center md:w-2/4">
-          <h1 className="text-4xl text-yellow-400 dark:text-yellow-200">
-            Sobre mim...
-          </h1>
+          <span className="text-4xl text-orange-500  ">Sobre mim...</span>
           <span className="text-2xl ">
             Sou um desenvolvedor web, cursando ciência da computação e
             aprendendo muito sobre tecnologia. Me especializando em sistemas

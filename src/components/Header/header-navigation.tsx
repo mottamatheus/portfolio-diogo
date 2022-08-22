@@ -10,13 +10,12 @@ export default function Navigation() {
   return (
     <nav className="flex items-center justify-center font-medium gap-7 font-display">
       <a
-        className="text-black dark:text-white  hover:text-blue-300 dark:hover:text-blue-300"
+        className=" text-white dark:text-orange-500  hover:text-black dark:hover:text-white"
         href="#sobre"
       >
-        Sobre
+        <span>Sobre</span>
       </a>
       <a
-        className="text-black dark:text-white hover:text-blue-300 dark:hover:text-blue-300"
         href="https://github.com/DiogoRocha10"
         target="_blank"
         rel="noreferrer"
@@ -25,12 +24,12 @@ export default function Navigation() {
       >
         <GithubLogo
           size={32}
-          className="cursor-pointer hover:text-blue-300"
+          className="text-white cursor-pointer dark:text-orange-500 hover:text-black dark:hover:text-white"
           alt="GitHub"
         />
       </a>
       <Lightbulb
-        className="cursor-pointer hover:text-blue-300"
+        className="text-white cursor-pointer dark:text-orange-500 hover:text-black dark:hover:text-white"
         size={32}
         onClick={handlerTheme}
         alt="Tema"
