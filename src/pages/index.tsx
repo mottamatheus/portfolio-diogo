@@ -26,12 +26,12 @@ export default function Home() {
         className="flex flex-col items-center justify-center w-full h-screen md:flex-row gap-11 md:gap-6"
       >
         <motion.div
-          className="flex flex-col items-start justify-start h-auto  gap-4  md:justify-center md:items-center "
+          className="flex flex-col items-start justify-start h-auto mt-10 md:mt-0 gap-4 md:justify-center md:items-center"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-4xl text-orange-500 dark:text-white md:text-6xl">
+          <h1 className="mt-10 text-4xl text-orange-500 md:mt-0 dark:text-white md:text-6xl">
             Olá, <br /> me chamo
             <br /> Diogo Rocha
             <br /> Desenvolvedor Web
