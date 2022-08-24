@@ -16,7 +16,7 @@ export default function Navigation() {
         <span>Sobre</span>
       </a>
       <a
-        href="https://github.com/DiogoRocha10"
+        href="https://github.com/diogorochaa"
         target="_blank"
         rel="noreferrer"
         aria-label="github"
