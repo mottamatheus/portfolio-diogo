@@ -57,9 +57,9 @@ export default function Home() {
 
       <div
         id="sobre"
-        className="flex flex-col items-center justify-center p-12  gap-8"
+        className="flex flex-col items-center justify-center p-12 mt-10 md:mt-0  gap-8"
       >
-        <div className="flex flex-col items-center justify-center md:w-2/4">
+        <div className="flex flex-col items-center justify-center gap-3 md:w-2/4">
           <span className="text-4xl text-orange-500  ">Sobre mim...</span>
           <span className="text-2xl ">
             Sou um desenvolvedor web, cursando ciência da computação e
