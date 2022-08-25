@@ -11,32 +11,35 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "12.2.2",
+    "@next/swc-linux-x64-gnu": "^12.2.2",
+    "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@highlandertech/eslint-config": "^2.0.6",
     "@babel/core": "^7.18.6",
+    "@highlandertech/eslint-config": "^2.0.6",
+    "@next/bundle-analyzer": "^12.2.3",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.242",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.12",
+    "eslint": "^7.32.0",
     "eslint-config-next": "12.2.2",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "framer-motion": "^6.5.1",
+    "husky": "^8.0.1",
     "next-themes": "^0.2.0",
+    "phosphor-react": "^1.4.1",
     "postcss": "^8.4.14",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-nesting": "^10.1.10",
     "prop-types": "^15.8.1",
     "tailwindcss": "^3.1.6",
     "ts-node": "^10.8.2",
-    "typescript": "4.7.4",
-    "@next/bundle-analyzer": "^12.2.3",
-    "phosphor-react": "^1.4.1",
-    "framer-motion": "^6.5.1",
-    "autoprefixer": "^10.4.8",
-    "eslint": "^7.32.0",
-    "eslint-plugin-tailwind": "^0.2.1",
-    "husky": "^8.0.1",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-nesting": "^10.1.10",
-    "cssnano": "^5.1.12"
+    "typescript": "4.7.4"
   }
 }

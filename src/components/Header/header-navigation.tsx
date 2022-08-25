@@ -4,9 +4,11 @@ import { GithubLogo, Lightbulb } from 'phosphor-react';
 
 export default function Navigation() {
   const { theme, setTheme } = useTheme();
+
   const handlerTheme = useCallback(() => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   }, [theme, setTheme]);
+
   return (
     <nav className="flex items-center justify-center font-medium gap-7 font-display">
       <a
