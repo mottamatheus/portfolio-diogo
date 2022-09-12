@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@next/swc-linux-x64-gnu": "^12.2.2",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^12.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
