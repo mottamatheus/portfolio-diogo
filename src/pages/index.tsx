@@ -1,10 +1,9 @@
 import { useState } from 'react';
+import Logos from '@components/Logos';
+import Perfil from '@images/perfil.jpeg';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
-
-import Perfil from '../../public/perfil.jpeg';
-import Logos from '../components/Logos';
 
 export default function Home() {
   const [rotate, setRotate] = useState(false);
