@@ -1,13 +1,12 @@
+import { ChatWpp } from '@components/ChatWpp';
+import { Footer } from '@components/Footer';
+import Header from '@components/Header';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 
-import { ChatWpp } from '../components/ChatWpp';
-import { Footer } from '../components/Footer';
-import Header from '../components/Header';
-
 import '../styles/global.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <Header />
@@ -17,5 +16,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
-
-export default MyApp;
