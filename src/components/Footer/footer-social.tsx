@@ -11,7 +11,7 @@ function FooterSocial() {
         aria-label="facebook"
       >
         <FacebookLogo
-          className="text-white cursor-pointer  hover:text-blue-600 dark:hover:text-blue-600"
+          className="text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-600"
           size={50}
           alt="Facebook"
         />
@@ -26,7 +26,7 @@ function FooterSocial() {
         <InstagramLogo
           size={50}
           alt="Instagram"
-          className="text-white cursor-pointer  hover:text-red-500 dark:hover:text-red-500"
+          className="text-white cursor-pointer hover:text-red-500 dark:hover:text-red-500"
         />
       </a>
       <a
@@ -39,7 +39,7 @@ function FooterSocial() {
         <LinkedinLogo
           size={50}
           alt="Linkedin"
-          className="text-white cursor-pointer  hover:text-blue-800 dark:hover:text-blue-800"
+          className="text-white cursor-pointer hover:text-blue-800 dark:hover:text-blue-800"
         />
       </a>
     </div>

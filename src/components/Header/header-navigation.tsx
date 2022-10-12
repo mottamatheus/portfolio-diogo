@@ -12,7 +12,7 @@ export default function Navigation() {
   return (
     <nav className="flex items-center justify-center font-medium gap-7 font-display">
       <a
-        className=" text-white dark:text-orange-500  hover:text-black dark:hover:text-white"
+        className="text-white dark:text-orange-500 hover:text-black dark:hover:text-white"
         href="#sobre"
       >
         <span>Sobre</span>

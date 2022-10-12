@@ -5,7 +5,7 @@ function Footer() {
     <div className="flex flex-col items-center justify-center mt-10 bg-orange-500 dark:bg-black">
       <FooterSocial />
       <footer className="flex flex-col items-center justify-center p-6">
-        <hr className="w-full my-4  " />
+        <hr className="w-full my-4" />
         <a
           href="https://www.linkedin.com/in/diogorochaa/"
           className="text-white dark:text-orange-500 hover:underline"
